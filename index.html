@@ -1,1 +1,320 @@
-zabiulla
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header */
+        .header {
+            background: #1f2937;
+            color: white;
+            padding: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        .header h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #d1d5db;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* Main content */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .sidebar {
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #2563eb;
+            font-size: 20px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        /* Skills */
+        .skills {
+            list-style: none;
+        }
+
+        .skills li {
+            background: #e5e7eb;
+            margin-bottom: 8px;
+            padding: 7px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* Education & Experience */
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item h4 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .item .company {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .item .date {
+            color: #6b7280;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .item ul {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Links */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .contact {
+                text-align: left;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- Header -->
+    <header class="header">
+        <div>
+            <h1>John Doe</h1>
+            <h2>Web Developer</h2>
+        </div>
+
+        <div class="contact">
+            <div>📧 john.doe@email.com</div>
+            <div>📱 +91 98765 43210</div>
+            <div>📍 Mumbai, India</div>
+            <div>
+                <a href="#">linkedin.com/in/johndoe</a>
+            </div>
+            <div>
+                <a href="#">github.com/johndoe</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <section class="section">
+                <h3>Profile</h3>
+                <p>
+                    Motivated and detail-oriented web developer with experience
+                    in creating responsive and user-friendly websites.
+                    Passionate about learning new technologies and solving
+                    real-world problems.
+                </p>
+            </section>
+
+            <section class="section">
+                <h3>Skills</h3>
+
+                <ul class="skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Git & GitHub</li>
+                    <li>SQL</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h3>Languages</h3>
+                <p>English</p>
+                <p>Hindi</p>
+                <p>Marathi</p>
+            </section>
+
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+
+            <section class="section">
+                <h3>Experience</h3>
+
+                <div class="item">
+                    <h4>Web Developer</h4>
+                    <div class="company">ABC Technologies</div>
+                    <div class="date">2024 – Present</div>
+
+                    <ul>
+                        <li>Developed responsive websites using HTML, CSS and JavaScript.</li>
+                        <li>Improved website performance and user experience.</li>
+                        <li>Worked with designers and developers to deliver projects.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h4>Junior Web Developer</h4>
+                    <div class="company">XYZ Solutions</div>
+                    <div class="date">2022 – 2024</div>
+
+                    <ul>
+                        <li>Created reusable website components.</li>
+                        <li>Fixed bugs and improved existing applications.</li>
+                        <li>Used Git and GitHub for version control.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="section">
+                <h3>Education</h3>
+
+                <div class="item">
+                    <h4>Bachelor of Computer Applications</h4>
+                    <div class="company">ABC University</div>
+                    <div class="date">2019 – 2022</div>
+
+                    <p>
+                        Graduated with a strong foundation in programming,
+                        databases, web development and software engineering.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="section">
+                <h3>Projects</h3>
+
+                <div class="item">
+                    <h4>Portfolio Website</h4>
+                    <p>
+                        Designed and developed a responsive personal portfolio
+                        website using HTML, CSS and JavaScript.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h4>Task Management App</h4>
+                    <p>
+                        Built a task management application that allows users
+                        to create, update and delete tasks.
+                    </p>
+                </div>
+
+            </section>
+
+            <section class="section">
+                <h3>Certifications</h3>
+
+                <div class="item">
+                    <h4>Web Development Certification</h4>
+                    <div class="company">Online Learning Platform</div>
+                    <div class="date">2023</div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
